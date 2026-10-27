@@ -74,7 +74,8 @@ export const metadata: Metadata = {
       }
     : undefined,
   other: {
-    "google-adsense-account": SITE_CONFIG.adsense.client,
+    // Google AdSense Site Verification Meta Tag: <meta name="google-adsense-account" content="ca-pub-6711715804152191">
+    "google-adsense-account": "ca-pub-6711715804152191",
   },
 };
 
@@ -114,6 +115,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth">
       <head>
+
         {/* Schema.org Structured Data */}
         <script
           type="application/ld+json"
