@@ -1,0 +1,436 @@
+// ==============================================================================
+// Ready-Made Free Fire Nicknames Collection for Faster FF 08
+// 100% Original presets created for the Faster FF 08 community
+// ==============================================================================
+
+export type ReadyMadeCategory =
+  | "All"
+  | "Pro & Esports"
+  | "King & Royalty"
+  | "Queen & Cute"
+  | "Mythic & Dark"
+  | "Sniper & Rusher"
+  | "Minimal & Short";
+
+export interface ReadyMadeNick {
+  id: string;
+  name: string;
+  category: Exclude<ReadyMadeCategory, "All">;
+  length: number;
+  rating: number; // for popularity sorting (1 - 100)
+  tags: string[];
+}
+
+export const READY_MADE_NICKNAMES: ReadyMadeNick[] = [
+  // --- Pro & Esports ---
+  {
+    id: "rm-1",
+    name: "꧁༺𝘍𝘈𝘚𝘛𝘌𝘙 08༻꧂",
+    category: "Pro & Esports",
+    length: 12,
+    rating: 99,
+    tags: ["Faster", "Official", "Wings", "Esports"],
+  },
+  {
+    id: "rm-2",
+    name: "『1-TAP』BEAST 亗",
+    category: "Pro & Esports",
+    length: 12,
+    rating: 96,
+    tags: ["Headshot", "OneTap", "Crown"],
+  },
+  {
+    id: "rm-3",
+    name: "OP • 𝕬𝕻𝕰𝖃 ✓",
+    category: "Pro & Esports",
+    length: 10,
+    rating: 94,
+    tags: ["Verified", "Gothic", "Apex"],
+  },
+  {
+    id: "rm-4",
+    name: "TEAM // 𝘝𝘐𝘗𝘌𝘙",
+    category: "Pro & Esports",
+    length: 11,
+    rating: 91,
+    tags: ["Clan", "Viper", "Slash"],
+  },
+  {
+    id: "rm-5",
+    name: "【PRO】𝐒𝐇𝐀𝐃𝐎𝐖 亗",
+    category: "Pro & Esports",
+    length: 12,
+    rating: 93,
+    tags: ["Pro", "Shadow", "Bracket"],
+  },
+  {
+    id: "rm-6",
+    name: "CS•7-0 // 𝑹𝑬𝑨𝑷𝑬𝑹",
+    category: "Pro & Esports",
+    length: 13,
+    rating: 92,
+    tags: ["ClashSquad", "Reaper"],
+  },
+  {
+    id: "rm-7",
+    name: "» 𝘍𝘐𝘙𝘌 𝘚𝘛𝘖𝘙𝘔 «",
+    category: "Pro & Esports",
+    length: 12,
+    rating: 89,
+    tags: ["Arrow", "Fire"],
+  },
+  {
+    id: "rm-8",
+    name: "『GM★』𝐆𝐎𝐃 亗",
+    category: "Pro & Esports",
+    length: 10,
+    rating: 95,
+    tags: ["Grandmaster", "Crown"],
+  },
+  {
+    id: "rm-9",
+    name: "⚡ 𝐑𝐔𝐒𝐇𝐄𝐑 • 08",
+    category: "Pro & Esports",
+    length: 11,
+    rating: 90,
+    tags: ["Thunder", "Rusher"],
+  },
+  {
+    id: "rm-10",
+    name: "亗 𝕭𝕺𝕾𝕾 • 𝕶𝕴𝕷𝕷",
+    category: "Pro & Esports",
+    length: 12,
+    rating: 94,
+    tags: ["Boss", "Fraktur"],
+  },
+
+  // --- King & Royalty ---
+  {
+    id: "rm-11",
+    name: "👑 ꧁𝑲𝑰𝑵𝑮 𝑨𝑴𝑨𝑵꧂ 👑",
+    category: "King & Royalty",
+    length: 13,
+    rating: 98,
+    tags: ["King", "Crown", "Wings"],
+  },
+  {
+    id: "rm-12",
+    name: "亗 𝓚𝓘𝓝𝓖 • 𝓕𝓕 亗",
+    category: "King & Royalty",
+    length: 11,
+    rating: 95,
+    tags: ["Script", "Royal"],
+  },
+  {
+    id: "rm-13",
+    name: "༒ ♛ 𝐄𝐌𝐏𝐄𝐑𝐎𝐑 ♛ ༒",
+    category: "King & Royalty",
+    length: 14,
+    rating: 97,
+    tags: ["Emperor", "Crown"],
+  },
+  {
+    id: "rm-14",
+    name: "♚ 𝕯𝕬𝕽𝕶 𝕷𝕺𝕽𝕯 ♚",
+    category: "King & Royalty",
+    length: 13,
+    rating: 92,
+    tags: ["Dark", "Gothic"],
+  },
+  {
+    id: "rm-15",
+    name: "👑 𝐒𝐎𝐕𝐄𝐑𝐄𝐈𝐆𝐍 👑",
+    category: "King & Royalty",
+    length: 13,
+    rating: 88,
+    tags: ["Sovereign", "Gold"],
+  },
+  {
+    id: "rm-16",
+    name: "LORD • 𝘝𝘌𝘕𝘖𝘔 亗",
+    category: "King & Royalty",
+    length: 12,
+    rating: 91,
+    tags: ["Lord", "Venom"],
+  },
+  {
+    id: "rm-17",
+    name: "【KING】𝐏𝐇𝐎𝐄𝐍𝐈𝐗",
+    category: "King & Royalty",
+    length: 13,
+    rating: 89,
+    tags: ["Phoenix", "Bracket"],
+  },
+  {
+    id: "rm-18",
+    name: "† 👑 𝕸𝕺𝕹𝕬𝕽𝕮𝕳 👑 †",
+    category: "King & Royalty",
+    length: 13,
+    rating: 90,
+    tags: ["Monarch", "Cross"],
+  },
+
+  // --- Queen & Cute ---
+  {
+    id: "rm-19",
+    name: "♡ ꧁𝓠𝓤𝓔𝓔𝓝꧂ ♡",
+    category: "Queen & Cute",
+    length: 10,
+    rating: 96,
+    tags: ["Queen", "Heart", "Wings"],
+  },
+  {
+    id: "rm-20",
+    name: "👸 𝑷𝑹𝑰𝑵𝑪𝑬𝑺𝑺 • 𝒁𝑬𝑹𝑶",
+    category: "Queen & Cute",
+    length: 14,
+    rating: 91,
+    tags: ["Princess", "Italic"],
+  },
+  {
+    id: "rm-21",
+    name: "ʚ 𝐀𝐍𝐆𝐄𝐋𝐈𝐂 ɞ",
+    category: "Queen & Cute",
+    length: 10,
+    rating: 93,
+    tags: ["Butterfly", "Angel"],
+  },
+  {
+    id: "rm-22",
+    name: "✨ ♛ 𝓡𝓞𝓢𝓔 ♛ ✨",
+    category: "Queen & Cute",
+    length: 11,
+    rating: 90,
+    tags: ["Rose", "Sparkles"],
+  },
+  {
+    id: "rm-23",
+    name: "🌸 ᴄʜᴇʀʀʏ ʙʟᴏᴏᴍ 🌸",
+    category: "Queen & Cute",
+    length: 14,
+    rating: 89,
+    tags: ["Cherry", "Smallcaps"],
+  },
+  {
+    id: "rm-24",
+    name: "ʕ•ᴥ•ʔ ᴛᴇᴅᴅʏ ɢᴀᴍᴇʀ",
+    category: "Queen & Cute",
+    length: 13,
+    rating: 94,
+    tags: ["Teddy", "Bear", "Cute"],
+  },
+  {
+    id: "rm-25",
+    name: "=^•^= ᴋɪᴛᴛʏ ᴋɪʟʟ",
+    category: "Queen & Cute",
+    length: 13,
+    rating: 92,
+    tags: ["Kitty", "Cat"],
+  },
+  {
+    id: "rm-26",
+    name: "✿ ꧁𝑴𝒀𝑺𝑻𝑰𝑪 𝑳𝑨𝑫𝒀꧂ ✿",
+    category: "Queen & Cute",
+    length: 14,
+    rating: 88,
+    tags: ["Lotus", "Mystic"],
+  },
+  {
+    id: "rm-27",
+    name: "🤍 ꜱᴏꜰᴛ ʜᴇᴀʀᴛ 🤍",
+    category: "Queen & Cute",
+    length: 12,
+    rating: 87,
+    tags: ["WhiteHeart", "Soft"],
+  },
+
+  // --- Mythic & Dark ---
+  {
+    id: "rm-28",
+    name: "☠ 𝕲𝕳𝕺𝕾𝕿 𝕶𝕴𝕷𝕷𝕰𝕽 ☠",
+    category: "Mythic & Dark",
+    length: 14,
+    rating: 96,
+    tags: ["Skull", "Ghost", "Fraktur"],
+  },
+  {
+    id: "rm-29",
+    name: "☬ 𝖂𝕬𝕽𝕷𝕺𝕽𝕯 ☬",
+    category: "Mythic & Dark",
+    length: 11,
+    rating: 94,
+    tags: ["Khanda", "Warlord"],
+  },
+  {
+    id: "rm-30",
+    name: "⚔ 𝕾𝕳𝕬𝕯𝕺𝖂 ⚔",
+    category: "Mythic & Dark",
+    length: 10,
+    rating: 92,
+    tags: ["Blade", "Shadow"],
+  },
+  {
+    id: "rm-31",
+    name: "☣ 𝐓𝐎𝐗𝐈𝐂 𝐅𝐈𝐑𝐄 ☣",
+    category: "Mythic & Dark",
+    length: 12,
+    rating: 90,
+    tags: ["Biohazard", "Fire"],
+  },
+  {
+    id: "rm-32",
+    name: "† 𝐃𝐄𝐌𝐎𝐍 𝐒𝐎𝐔𝐋 †",
+    category: "Mythic & Dark",
+    length: 12,
+    rating: 91,
+    tags: ["Dagger", "Demon"],
+  },
+  {
+    id: "rm-33",
+    name: "么 𝕯𝕽𝕬𝕲𝕺𝕹 么",
+    category: "Mythic & Dark",
+    length: 10,
+    rating: 93,
+    tags: ["Kanji", "Dragon"],
+  },
+  {
+    id: "rm-34",
+    name: "☯ 𝐁𝐀𝐋𝐀𝐍𝐂𝐄 ☯",
+    category: "Mythic & Dark",
+    length: 10,
+    rating: 86,
+    tags: ["YinYang", "Zen"],
+  },
+  {
+    id: "rm-35",
+    name: "༄ 𝘕𝘐𝘕𝘑𝘈 𝘚𝘛𝘙𝘐𝘒𝘌 ༄",
+    category: "Mythic & Dark",
+    length: 13,
+    rating: 88,
+    tags: ["Ninja", "Cloud"],
+  },
+
+  // --- Sniper & Rusher ---
+  {
+    id: "rm-36",
+    name: "🎯 𝐀𝐖𝐌 • 𝐆𝐎𝐃 🎯",
+    category: "Sniper & Rusher",
+    length: 11,
+    rating: 97,
+    tags: ["AWM", "Crosshair"],
+  },
+  {
+    id: "rm-37",
+    name: "💥 𝐌𝟏𝟖𝟖𝟕 • 𝐎𝐍𝐄 💥",
+    category: "Sniper & Rusher",
+    length: 12,
+    rating: 95,
+    tags: ["Shotgun", "OneTap"],
+  },
+  {
+    id: "rm-38",
+    name: "⚡ 𝐑𝐀𝐏𝐈𝐃 𝐑𝐔𝐒𝐇 ⚡",
+    category: "Sniper & Rusher",
+    length: 12,
+    rating: 92,
+    tags: ["Speed", "Thunder"],
+  },
+  {
+    id: "rm-39",
+    name: "🎯 𝐒𝐍𝐈𝐏𝐄𝐑 𝐗 🎯",
+    category: "Sniper & Rusher",
+    length: 10,
+    rating: 91,
+    tags: ["Target", "Sniper"],
+  },
+  {
+    id: "rm-40",
+    name: "🔥 𝐇𝐄𝐀𝐃𝐒𝐇𝐎𝐓 𝟗𝟗 🔥",
+    category: "Sniper & Rusher",
+    length: 13,
+    rating: 94,
+    tags: ["Headshot", "Fire"],
+  },
+  {
+    id: "rm-41",
+    name: "🛡️ 𝐆𝐋𝐎𝐎 • 𝟑𝟔𝟎 🛡️",
+    category: "Sniper & Rusher",
+    length: 12,
+    rating: 89,
+    tags: ["Defense", "Shield"],
+  },
+
+  // --- Minimal & Short ---
+  {
+    id: "rm-42",
+    name: "𝘍 𝘈 𝘚 𝘛 𝘌 𝘙",
+    category: "Minimal & Short",
+    length: 11,
+    rating: 95,
+    tags: ["Clean", "Spaced"],
+  },
+  {
+    id: "rm-43",
+    name: "A M A N",
+    category: "Minimal & Short",
+    length: 7,
+    rating: 91,
+    tags: ["Short", "Simple"],
+  },
+  {
+    id: "rm-44",
+    name: "V • I • P • E • R",
+    category: "Minimal & Short",
+    length: 11,
+    rating: 89,
+    tags: ["Dots", "Viper"],
+  },
+  {
+    id: "rm-45",
+    name: "| 𝐆𝐇𝐎𝐒𝐓 |",
+    category: "Minimal & Short",
+    length: 9,
+    rating: 90,
+    tags: ["Bars", "Ghost"],
+  },
+  {
+    id: "rm-46",
+    name: "『 𝐀 𝐏 𝐄 𝐗 』",
+    category: "Minimal & Short",
+    length: 9,
+    rating: 93,
+    tags: ["Hollow", "Apex"],
+  },
+  {
+    id: "rm-47",
+    name: "// 𝐓 𝐈 𝐓 𝐀 𝐍 //",
+    category: "Minimal & Short",
+    length: 11,
+    rating: 88,
+    tags: ["Slash", "Titan"],
+  },
+  {
+    id: "rm-48",
+    name: "» ＢＬＡＺＥ «",
+    category: "Minimal & Short",
+    length: 9,
+    rating: 87,
+    tags: ["Arrow", "Fullwidth"],
+  },
+  {
+    id: "rm-49",
+    name: "_ 𝐅 𝐑 𝐎 𝐒 𝐓 _",
+    category: "Minimal & Short",
+    length: 9,
+    rating: 86,
+    tags: ["Underscore", "Frost"],
+  },
+  {
+    id: "rm-50",
+    name: "「 𝐍 𝐄 𝐗 𝐔 𝐒 」",
+    category: "Minimal & Short",
+    length: 9,
+    rating: 92,
+    tags: ["Corner", "Nexus"],
+  },
+];
