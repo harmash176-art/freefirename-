@@ -68,11 +68,9 @@ export const metadata: Metadata = {
       "Generate 100+ stylish Free Fire nicknames with wings, crowns, and esports symbols. Free 1-click copy.",
     creator: "@FasterFF08",
   },
-  verification: SITE_CONFIG.googleSiteVerification
-    ? {
-        google: SITE_CONFIG.googleSiteVerification,
-      }
-    : undefined,
+  verification: {
+    google: "1oSolSBlMqFW9satr0rGY1Gv7a4ai7cE1pxNL2hHWNI",
+  },
   other: {
     // Google AdSense Site Verification Meta Tag: <meta name="google-adsense-account" content="ca-pub-6711715804152191">
     "google-adsense-account": "ca-pub-6711715804152191",

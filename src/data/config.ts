@@ -10,7 +10,7 @@ export const SITE_CONFIG = {
   realYoutubeUrl: "https://www.youtube.com/channel/UCtKpS3-K9DL74w-xT4p5ffg",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://faster-ff-08.vercel.app",
   // Google Search Console HTML Verification code (paste your content code here or set NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION in .env)
-  googleSiteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
+  googleSiteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "1oSolSBlMqFW9satr0rGY1Gv7a4ai7cE1pxNL2hHWNI",
   creatorName: "Faster FF 08",
   tagline: "Free Fire Gaming. Epic Gameplay. Preset Gaming Tools.",
   description: "Official Faster FF 08 Free Fire Nick Finder. Generate 100+ stylish Unicode nicknames with crowns, wings, and esports fonts. Browse ready-made gamertags and combine symbols.",
