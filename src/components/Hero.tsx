@@ -45,19 +45,75 @@ export function Hero() {
         <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase tracking-tight text-white mb-6 leading-none">
           FREE FIRE{" "}
           <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-gaming-red to-orange-500 neon-text">
-            NICK FINDER
+            NICKNAME GENERATOR
           </span>
         </h1>
 
         {/* Subtitle */}
         <p className="text-lg sm:text-2xl md:text-3xl font-heading font-semibold text-zinc-200 tracking-wide mb-4 max-w-3xl">
-          100+ Stylish Unicode Names, Ready-Made Gamertags & Symbols
+          100+ Stylish Unicode Names, Pro Player Tags & Symbols Finder
         </p>
 
         {/* Supporting description */}
-        <p className="text-sm sm:text-base text-zinc-400 max-w-2xl mb-10 leading-relaxed">
-          The ultimate name styler for Free Fire players. Type any gamertag to instantly generate 100+ variations with crowns, wings, and esports fonts, or browse our ready-made collection and symbols combiner with instant 1-click copy.
+        <p className="text-sm sm:text-base text-zinc-400 max-w-2xl mb-8 leading-relaxed">
+          The ultimate name styler for Free Fire players. Type any gamertag to instantly generate 100+ variations with crowns, wings, and esports fonts, or browse pro player names, profile bios, and gaming symbols with instant 1-click copy.
         </p>
+
+        {/* Quick Jump Category Pills */}
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-10 max-w-2xl">
+          <span className="text-[11px] font-bold uppercase tracking-wider text-zinc-500 mr-1">
+            Quick Jump:
+          </span>
+          <a
+            href="#generator"
+            onClick={(e) => scrollToSection(e, "generator")}
+            className="px-3 py-1 rounded-full bg-zinc-900/90 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-800 hover:border-red-500/50 text-xs font-semibold transition-colors"
+          >
+            Generator
+          </a>
+          <a
+            href="#ready-made"
+            onClick={(e) => scrollToSection(e, "ready-made")}
+            className="px-3 py-1 rounded-full bg-zinc-900/90 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-800 hover:border-red-500/50 text-xs font-semibold transition-colors"
+          >
+            Ready-Made
+          </a>
+          <a
+            href="#symbols"
+            onClick={(e) => scrollToSection(e, "symbols")}
+            className="px-3 py-1 rounded-full bg-zinc-900/90 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-800 hover:border-red-500/50 text-xs font-semibold transition-colors"
+          >
+            Symbols
+          </a>
+          <a
+            href="#pro-names"
+            onClick={(e) => scrollToSection(e, "pro-names")}
+            className="px-3 py-1 rounded-full bg-zinc-900/90 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-800 hover:border-red-500/50 text-xs font-semibold transition-colors"
+          >
+            Pro Player Names
+          </a>
+          <a
+            href="#bio-ideas"
+            onClick={(e) => scrollToSection(e, "bio-ideas")}
+            className="px-3 py-1 rounded-full bg-zinc-900/90 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-800 hover:border-red-500/50 text-xs font-semibold transition-colors"
+          >
+            FF Bios
+          </a>
+          <a
+            href="#unique-names"
+            onClick={(e) => scrollToSection(e, "unique-names")}
+            className="px-3 py-1 rounded-full bg-zinc-900/90 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-800 hover:border-red-500/50 text-xs font-semibold transition-colors"
+          >
+            Unique Names
+          </a>
+          <a
+            href="#name-guide"
+            onClick={(e) => scrollToSection(e, "name-guide")}
+            className="px-3 py-1 rounded-full bg-zinc-900/90 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-800 hover:border-red-500/50 text-xs font-semibold transition-colors"
+          >
+            Name Guide & FAQ
+          </a>
+        </div>
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5 w-full sm:w-auto mb-16">

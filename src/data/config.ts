@@ -8,12 +8,12 @@ export const SITE_CONFIG = {
   subscribersRaw: "6,000+",
   gameTitle: "Garena Free Fire",
   realYoutubeUrl: "https://www.youtube.com/channel/UCtKpS3-K9DL74w-xT4p5ffg",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://faster-ff-08.vercel.app",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://ffnickfinder.vercel.app",
   // Google Search Console HTML Verification code (paste your content code here or set NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION in .env)
   googleSiteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "1oSolSBlMqFW9satr0rGY1Gv7a4ai7cE1pxNL2hHWNI",
   creatorName: "Faster FF 08",
   tagline: "Free Fire Gaming. Epic Gameplay. Preset Gaming Tools.",
-  description: "Official Faster FF 08 Free Fire Nick Finder. Generate 100+ stylish Unicode nicknames with crowns, wings, and esports fonts. Browse ready-made gamertags and combine symbols.",
+  description: "Official Free Fire Nickname Generator & FF Nick Finder by Faster FF 08. Generate 100+ stylish Unicode nicknames with crowns, wings, esports fonts, and symbols.",
   
   // Navigation Links
   navLinks: [
@@ -21,7 +21,10 @@ export const SITE_CONFIG = {
     { label: "Generator", href: "#generator" },
     { label: "Ready-Made", href: "#ready-made" },
     { label: "Symbols", href: "#symbols" },
-    { label: "Videos", href: "#videos" },
+    { label: "Pro Names", href: "#pro-names" },
+    { label: "Bio Ideas", href: "#bio-ideas" },
+    { label: "Unique Names", href: "#unique-names" },
+    { label: "Guide & FAQ", href: "#name-guide" },
     { label: "About", href: "#about" },
   ],
 

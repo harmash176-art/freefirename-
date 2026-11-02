@@ -6,6 +6,10 @@ import { Hero } from "@/components/Hero";
 import { NicknameGenerator } from "@/components/NicknameGenerator";
 import { ReadyMadeNicknames } from "@/components/ReadyMadeNicknames";
 import { SymbolsLibrary } from "@/components/SymbolsLibrary";
+import { ProPlayerNames } from "@/components/ProPlayerNames";
+import { FreeFireBioIdeas } from "@/components/FreeFireBioIdeas";
+import { UniqueGamingNames } from "@/components/UniqueGamingNames";
+import { NameGuideAndFaq } from "@/components/NameGuideAndFaq";
 import { AiGamingLab } from "@/components/AiGamingLab";
 import { VideoGrid } from "@/components/VideoGrid";
 import { AboutCreator } from "@/components/AboutCreator";
@@ -64,9 +68,29 @@ export default function HomePage() {
         <SymbolsLibrary />
       </div>
 
+      {/* Pro Player Free Fire Names & Clan Tags */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <ProPlayerNames />
+      </div>
+
+      {/* Free Fire Bio Ideas & Color Code Signatures */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <FreeFireBioIdeas />
+      </div>
+
+      {/* Unique Gaming Names & Free Fire Aliases */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <UniqueGamingNames />
+      </div>
+
       {/* Responsive AdSense Slot */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AdSenseBanner />
+      </div>
+
+      {/* Comprehensive Name Guide & FAQs */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <NameGuideAndFaq />
       </div>
 
       {/* Pro Creator Tools: YouTube SEO & Aim Drills */}

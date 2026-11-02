@@ -53,29 +53,63 @@ export function Footer() {
             <h4 className="text-xs uppercase font-bold tracking-wider text-white font-heading">
               Quick Navigation
             </h4>
-            <ul className="space-y-2 text-xs">
-              {SITE_CONFIG.navLinks.map((item) => (
-                <li key={item.label}>
-                  <a
-                    href={item.href}
-                    className="hover:text-gaming-red transition-colors"
-                  >
-                    {item.label}
+            <div className="grid grid-cols-2 gap-2 text-xs">
+              <ul className="space-y-1.5">
+                <li>
+                  <a href="#generator" className="hover:text-gaming-red transition-colors">
+                    Nick Generator
                   </a>
                 </li>
-              ))}
-              <li>
-                <a
-                  href={SITE_CONFIG.realYoutubeUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-gaming-red text-red-400 transition-colors flex items-center gap-1 font-semibold"
-                >
-                  <span>Official YouTube Channel</span>
-                  <Youtube className="w-3 h-3" />
-                </a>
-              </li>
-            </ul>
+                <li>
+                  <a href="#ready-made" className="hover:text-gaming-red transition-colors">
+                    Ready-Made Names
+                  </a>
+                </li>
+                <li>
+                  <a href="#symbols" className="hover:text-gaming-red transition-colors">
+                    Symbols Library
+                  </a>
+                </li>
+                <li>
+                  <a href="#pro-names" className="hover:text-gaming-red transition-colors">
+                    Pro Player Names
+                  </a>
+                </li>
+              </ul>
+              <ul className="space-y-1.5">
+                <li>
+                  <a href="#bio-ideas" className="hover:text-gaming-red transition-colors">
+                    FF Bio Ideas
+                  </a>
+                </li>
+                <li>
+                  <a href="#unique-names" className="hover:text-gaming-red transition-colors">
+                    Unique IGNs
+                  </a>
+                </li>
+                <li>
+                  <a href="#name-guide" className="hover:text-gaming-red transition-colors">
+                    Name Change Guide
+                  </a>
+                </li>
+                <li>
+                  <a href="#faq" className="hover:text-gaming-red transition-colors">
+                    FAQs
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={SITE_CONFIG.realYoutubeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-gaming-red text-red-400 transition-colors flex items-center gap-1 font-semibold"
+                  >
+                    <span>YouTube Channel</span>
+                    <Youtube className="w-3 h-3" />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           {/* Real Channel Verification Box */}
@@ -104,12 +138,12 @@ export function Footer() {
 
         {/* Bottom Bar & Disclaimer */}
         <div className="mt-12 pt-8 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
-          <div className="space-y-1 text-center sm:text-left">
+          <div className="space-y-1 text-center sm:text-left max-w-2xl">
             <p>
-              &copy; {new Date().getFullYear()} Faster FF 08. All rights reserved.
+              &copy; {new Date().getFullYear()} Faster FF 08 (ffnickfinder.vercel.app). All rights reserved.
             </p>
-            <p className="text-[11px] text-zinc-600">
-              Disclaimer: Garena Free Fire is a trademark of Garena International. This fan and community platform is not affiliated with or endorsed by Garena.
+            <p className="text-[11px] text-zinc-500 leading-relaxed">
+              Disclaimer: Faster FF 08 is an independent fan-made website and gaming community tool. Garena, Free Fire, and Free Fire MAX are registered trademarks of Garena International and Sea Ltd. This website is not endorsed by, directly affiliated with, maintained, authorized, or sponsored by Garena or Sea Ltd.
             </p>
           </div>
 

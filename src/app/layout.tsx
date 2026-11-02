@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import { ToastProvider } from "@/components/Toast";
 import { SITE_CONFIG } from "@/data/config";
+import { FAQ_LIST } from "@/data/seoContentData";
 
 export const viewport: Viewport = {
   themeColor: "#ff0844",
@@ -16,30 +17,33 @@ const siteBaseUrl = SITE_CONFIG.siteUrl.replace(/\/$/, "");
 export const metadata: Metadata = {
   metadataBase: new URL(siteBaseUrl),
   title: {
-    default: "Faster FF 08 — Free Fire Nick Finder | 100+ Stylish Names & Symbols",
-    template: "%s | Faster FF 08 Nick Finder",
+    default: "Free Fire Nickname Generator — 100+ Stylish FF Names & Symbols",
+    template: "%s | Free Fire Nickname Generator",
   },
   description:
-    "Official Faster FF 08 Free Fire Nick Finder. Generate 100+ stylish Unicode nicknames with crowns, wings, and esports fonts. Browse ready-made gamertags and combine symbols with instant 1-click copy.",
+    "Free Fire Nickname Generator with 100+ stylish fonts, wings, crowns & esports symbols. Copy ready-made FF names, pro player tags, and stylish bios in 1 click.",
   keywords: [
-    "Faster FF 08",
-    "Free Fire Nick Finder",
+    "Free Fire Nickname Generator",
     "Free Fire Stylish Name",
-    "Free Fire Name Generator",
-    "Nick Finder Free Fire",
-    "Free Fire 100 Stylish Names",
-    "Free Fire Wings Symbols",
+    "FF Nick Finder",
+    "Free Fire Name Style",
+    "Free Fire Symbols",
+    "Free Fire Pro Player Names",
+    "Free Fire Bio Ideas",
+    "Free Fire Unique Names",
     "Free Fire Crown Names",
-    "Free Fire Nicknames AMAN",
+    "Free Fire Wings Symbol",
+    "Raistar Name Style",
+    "Ajjubhai Name Style",
+    "Free Fire Name Change",
     "Free Fire Esports Names",
-    "One Tap Headshot",
-    "Free Fire YouTube SEO",
+    "Faster FF 08",
   ],
   authors: [{ name: "Faster FF 08", url: SITE_CONFIG.realYoutubeUrl }],
   creator: "Faster FF 08",
   publisher: "Faster FF 08",
   alternates: {
-    canonical: "/",
+    canonical: siteBaseUrl,
   },
   robots: {
     index: true,
@@ -56,16 +60,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteBaseUrl,
-    title: "Faster FF 08 — Free Fire Nick Finder | 100+ Stylish Names & Symbols",
+    title: "Free Fire Nickname Generator — 100+ Stylish FF Names & Symbols",
     description:
-      "Generate 100+ stylish Free Fire nicknames with wings, crowns, and esports symbols. Browse curated ready-made names and combine decorative symbols with instant 1-click copy.",
-    siteName: "Faster FF 08 Nick Finder",
+      "Generate 100+ stylish Free Fire nicknames with wings, crowns, and esports fonts. Find pro player names, FF bio ideas, and gaming symbols with instant 1-click copy.",
+    siteName: "Free Fire Nickname Generator",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Faster FF 08 — Free Fire Nick Finder | 100+ Stylish Names & Symbols",
+    title: "Free Fire Nickname Generator — 100+ Stylish FF Names & Symbols",
     description:
-      "Generate 100+ stylish Free Fire nicknames with wings, crowns, and esports symbols. Free 1-click copy.",
+      "Generate 100+ stylish Free Fire nicknames with wings, crowns, and esports fonts. Free 1-click copy.",
     creator: "@FasterFF08",
   },
   verification: {
@@ -77,7 +81,7 @@ export const metadata: Metadata = {
   },
 };
 
-// Safe, honest structured data (Schema.org WebSite & Organization)
+// Safe, honest structured data (Schema.org WebSite, WebApplication, FAQPage & Organization)
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -85,13 +89,42 @@ const structuredData = {
       "@type": "WebSite",
       "@id": `${siteBaseUrl}/#website`,
       url: siteBaseUrl,
-      name: "Faster FF 08 — Free Fire Nick Finder",
+      name: "Free Fire Nickname Generator — Faster FF 08",
+      alternateName: ["FF Nick Finder", "Free Fire Name Generator", "Faster FF 08"],
       description:
-        "Official Faster FF 08 Free Fire Nick Finder featuring 100+ stylish Unicode nickname variations, browsable ready-made gamertags, and decorative symbol combiner.",
+        "Generate 100+ stylish Free Fire nicknames with wings, crowns, and esports fonts. Copy pro player names, FF bio ideas, and gaming symbols in 1 click.",
       publisher: {
         "@id": `${siteBaseUrl}/#organization`,
       },
       inLanguage: "en-US",
+    },
+    {
+      "@type": "WebApplication",
+      "@id": `${siteBaseUrl}/#app`,
+      name: "Free Fire Nickname Generator & FF Nick Finder",
+      url: siteBaseUrl,
+      applicationCategory: "GameApplication, UtilityApplication",
+      operatingSystem: "Web, Android, iOS",
+      browserRequirements: "Requires JavaScript. Requires HTML5.",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD",
+      },
+      description:
+        "Online Free Fire nickname generator providing 100+ Unicode style transformations, decorative gaming symbols, ready-made gamertags, and profile bio codes.",
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${siteBaseUrl}/#faq`,
+      mainEntity: FAQ_LIST.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
     },
     {
       "@type": "Organization",

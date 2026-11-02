@@ -61,12 +61,12 @@ export function Navbar() {
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-6">
             {SITE_CONFIG.navLinks.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="text-sm font-semibold uppercase tracking-wider text-zinc-300 hover:text-white transition-colors relative py-1 group"
+                className="text-xs xl:text-sm font-semibold uppercase tracking-wider text-zinc-300 hover:text-white transition-colors relative py-1 group whitespace-nowrap"
               >
                 {item.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gaming-red transition-all duration-300 group-hover:w-full shadow-neon-red" />
@@ -75,7 +75,7 @@ export function Navbar() {
           </nav>
 
           {/* Desktop Action & Subscribe Button */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4">
             <ConfettiSubscribeButton size="sm">
               Subscribe
             </ConfettiSubscribeButton>
@@ -84,7 +84,7 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg bg-zinc-900 border border-zinc-700 text-zinc-200 hover:text-white hover:border-red-500 transition-colors"
+            className="lg:hidden p-2 rounded-lg bg-zinc-900 border border-zinc-700 text-zinc-200 hover:text-white hover:border-red-500 transition-colors"
             aria-label="Toggle Navigation Menu"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -94,7 +94,7 @@ export function Navbar() {
 
       {/* Mobile Drawer */}
       {isOpen && (
-        <div className="md:hidden bg-zinc-950/98 border-b border-red-500/30 px-6 py-6 animate-in slide-in-from-top-4 duration-200">
+        <div className="lg:hidden bg-zinc-950/98 border-b border-red-500/30 px-6 py-6 animate-in slide-in-from-top-4 duration-200 max-h-[80vh] overflow-y-auto">
           <nav className="flex flex-col gap-4">
             {SITE_CONFIG.navLinks.map((item) => (
               <a
